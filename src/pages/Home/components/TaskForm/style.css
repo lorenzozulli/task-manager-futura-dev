@@ -1,0 +1,90 @@
+.task-form {
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+  width: 75%;
+  flex-shrink: 0;
+  padding: 0em 1em 0em 1em;
+  border-radius: 1em;
+  corner-shape: superellipse(2);
+  border: 1px solid #80808040;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  box-shadow: 0em 0.25em 0.15em 0.1em #80808010;
+}
+
+#input-task-form-title {
+  field-sizing: content;
+  font-size: larger;
+  flex-shrink: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #80808030;
+  padding: 0.6em 1.2em;
+  font-weight: 1000;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 0.25em;
+  background-color: transparent;
+  color: var(--color);
+  white-space: pre;
+  text-wrap: wrap;
+  resize: none;
+}
+
+#input-task-form-title::placeholder {
+  color: var(--color);
+}
+
+#textarea-task-form-description {
+  flex-grow: 1;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 0.25em;
+  resize: none;
+  background-color: transparent;
+  color: var(--color);
+  white-space: pre;
+  text-wrap: wrap;
+}
+#textarea-task-form-description {
+  color: var(--color);
+}
+
+.task-form-button-container {
+  display: flex;
+  padding: 1em 0em 1em 0em;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  gap: 0.5em;
+  flex-shrink: 0;
+}
+
+.button-task-form-cancel {
+  background-color: transparent;
+  color: var(--color);
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.button-task-form-submit {
+  background-color: #ffcc5f;
+  width: 6em;
+  height: 3em;
+  border-radius: 1em;
+  color: #ffffff;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}

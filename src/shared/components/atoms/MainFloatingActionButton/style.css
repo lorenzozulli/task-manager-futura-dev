@@ -1,0 +1,23 @@
+.main-floating-action-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  align-content: center;
+  background-color: #ffcc5f;
+  width: 2em;
+  height: 2em;
+  corner-shape: superellipse(2);
+  border-radius: 100%;
+  color: white;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.main-floating-action-button {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  align-content: center;
+}

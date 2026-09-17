@@ -1,0 +1,28 @@
+.not-found-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.h1-error-display {
+  color: var(--color);
+}
+
+.h3-error-message {
+  color: var(--color);
+}
+
+
+.button-go-home {
+  background-color: #ffcc5f;
+  width: 6em;
+  height: 3em;
+  border-radius: 1em;
+  color: white;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}

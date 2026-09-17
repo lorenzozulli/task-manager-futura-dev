@@ -1,0 +1,77 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1em 2em 0 2em;
+  width: 100%;
+}
+
+.button-add-task {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  font: inherit;
+  font-weight: 900;
+  padding: 1em;
+  gap: 1em;
+  border-radius: 10px;
+  box-shadow: 0em 0.25em 0.15em #80808010;
+  border: 1px solid #80808040;
+  background-color: #fafafa10;
+  color: var(--color);
+  width: fit-content;
+  min-width: 141px;
+}
+
+.button-add-task:hover {
+  background-color: #80808040;
+}
+
+.select-filters {
+  appearance: base-select;
+  display: flex;
+  justify-content: space-between;
+  padding: .5em;
+  font: inherit;
+  margin-top: 1em;
+  width: auto;
+  border: 1px solid #80808040;
+  border-radius: 10px;
+  background-color: #fafafa10;
+  color: var(--color);
+}
+
+.select-filters:hover {
+  background-color: #80808040;
+}
+
+.select-filters::picker(select) {
+  margin-block-start: 0.5rem;
+  appearance: base-select;
+  background-color: transparent;
+  color: var(--color);
+  border: 1px solid #80808040;
+  border-radius: 10px;
+  align-items: center;
+  padding: .5em 0em .5em 0;
+}
+
+.select-filters::picker-icon {
+  display: none;
+}
+
+.select-option {
+  margin: 0 auto;
+  padding: .25em;
+  width: 90%;
+  border-radius: 10px;
+}
+
+option::checkmark {
+  padding-left: .25em;
+  content: "⅃";
+  color: #ffcc5f;
+  font-size: large;
+  transform: rotate(45deg);
+}

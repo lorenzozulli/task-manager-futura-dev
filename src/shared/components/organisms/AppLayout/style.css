@@ -1,0 +1,68 @@
+.app-layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content-wrapper {
+  display: grid;
+  height: 100vh;
+  overflow: hidden;
+  grid-template-columns: 0.25fr 1fr;
+}
+
+.sidebar-wrapper {
+  display: flex;
+  flex-grow: 1;
+}
+
+.main-content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.floating-action-buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: auto;
+  height: 124px;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+}
+
+*::-webkit-scrollbar {
+  background: transparent;
+  display: block;
+  width: .5em;
+}
+
+*::-webkit-scrollbar-button {
+  display: none;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 100%;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #ffcc5f50;
+  border-radius: 100vw;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #ffcc5f;
+}
+
+@media(orientation: portrait) {
+  .content-wrapper {
+    display: flex;
+  }
+}

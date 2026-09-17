@@ -1,0 +1,45 @@
+header {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+  top: 0;
+  padding-left: 2em;
+  text-align: start;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+}
+
+a, a:visited, a:active {
+  color: var(--color);
+  text-decoration: none;
+}
+
+.icon-container {
+  background-color: #ffcc5f;
+  color: #ffffff;
+  padding: 0.5em;
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 50%;
+  corner-shape: superellipse(2);
+}
+
+.title-container {
+  padding-left: 0.5em;
+  font-weight: 900;
+}
+
+.theme-button-container {
+  padding-right: 2em;
+}
+
+.button-theme-switcher {
+  background-color: transparent;
+  border: transparent;
+  color: var(--color);
+}

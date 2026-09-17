@@ -1,0 +1,64 @@
+.mini-floating-action-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #aaaaaa;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  corner-shape: superellipse(2);
+  color: white;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+  anchor-name: --mini-fab-popover;
+}
+
+.mini-floating-action-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.mini-floating-action-button-filters {
+  margin: 0;
+  margin-bottom: 6px;
+  inset: auto;
+  bottom: anchor(top);
+  right: anchor(right);
+  padding: .5em;
+  border: 1px solid #80808030;
+  border-radius: 10%;
+  background-color: var(--background-color);
+  opacity: 0;
+  transition: display .5s, opacity .5s;
+  transition-behavior: allow-discrete;
+
+  position-anchor: --mini-fab-popover;
+}
+
+.mini-floating-action-button-filters:popover-open {
+  display: flex;
+  opacity: 1;
+
+  @starting-style {
+    opacity: 0;
+  }
+}
+
+.mini-fab-option {
+  color: var(--color);
+  display: flex;
+  padding: 0 1em 0 1em;
+}
+
+.mini-fab-option:hover {
+  background-color: #80808050;
+  transition: .2s ease-in-out;
+}
+
+

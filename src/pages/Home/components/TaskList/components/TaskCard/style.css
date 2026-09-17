@@ -1,0 +1,145 @@
+.task-card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+  margin: .5em;
+  padding: .5em;
+  width: auto;
+  border-radius: 10px;
+}
+
+.task-card-container:hover {
+  background-color: #80808040;
+}
+
+.task-card-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+
+.checkbox-container {
+  display: flex;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  letter-spacing: normal;
+}
+
+.input-task-checkbox {
+  flex-shrink: 0;
+  appearance: none;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  border: 1px solid var(--color);
+}
+
+.input-task-checkbox:hover {
+  border: 10px solid #ffcc5f40;
+  background-color: #80808040;
+  transition: .2s ease-in-out;
+}
+
+.input-task-checkbox:checked {
+  transition: .2s ease-in-out;
+  background-color: transparent;
+  border: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.input-task-checkbox:checked::after {
+  content: "⅃";
+  color: #ffcc5f;
+  font-size: large;
+  transform: rotate(45deg);
+}
+
+.input-task-card-info-container {
+  height: 100%;
+  padding-left: 1em;
+}
+
+.task-card-title {
+  margin: 0;
+  padding-left: .25em;
+  color: var(--color);
+  font-size: large;
+  font-weight: 700;
+  white-space: wrap;
+
+}
+
+.task-card-description {
+  margin: 0;
+  color: var(--color);
+  background-color: transparent;
+  white-space: pre-wrap;
+  padding-left: 2em;
+}
+
+.task-title-description-container {
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;
+}
+
+.popover-button {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: transparent;
+  background-color: transparent;
+  color: var(--color);
+}
+
+.popover-button:hover {
+  border-radius: 50%;
+  background-color: #80808050;
+  transition: .2s ease-in-out;
+}
+
+.popover {
+  margin: 0;
+  margin-top: 6px;
+  inset: auto;
+  top: anchor(bottom);
+  right: anchor(right);
+  padding: .5em 0 .5em 0;
+  border: 1px solid #80808030;
+  border-radius: 10%;
+  background-color: var(--background-color);
+  opacity: 0;
+  transition: display .5s, opacity .5s;
+  transition-behavior: allow-discrete;
+}
+
+.popover:popover-open {
+  display: flex;
+  opacity: 1;
+
+  @starting-style {
+    opacity: 0;
+  }
+}
+
+.menu-option {
+  color: var(--color);
+  display: block;
+  padding: 0 1em 0 1em;
+  align-content: center;
+}
+
+.menu-option:hover {
+  background-color: #80808050;
+  transition: .2s ease-in-out;
+}
+
+del {
+  color: var(--color);
+}
